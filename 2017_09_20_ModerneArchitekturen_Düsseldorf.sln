@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorExample", "Decorat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{468DA25F-D83A-4FE9-BE13-C497A4A61FE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloWPF", "HalloWPF\HalloWPF.csproj", "{E7147DD4-1ECB-4FE8-B565-BCBF9880E609}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{468DA25F-D83A-4FE9-BE13-C497A4A61FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{468DA25F-D83A-4FE9-BE13-C497A4A61FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{468DA25F-D83A-4FE9-BE13-C497A4A61FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7147DD4-1ECB-4FE8-B565-BCBF9880E609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7147DD4-1ECB-4FE8-B565-BCBF9880E609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7147DD4-1ECB-4FE8-B565-BCBF9880E609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7147DD4-1ECB-4FE8-B565-BCBF9880E609}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
