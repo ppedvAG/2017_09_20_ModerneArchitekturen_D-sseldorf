@@ -5,15 +5,13 @@ namespace DecoratorExample.Data
 {
     public class Repository : IRepository
     {
-        public IEnumerable<string> GetAllCustomers()
-        {
-            // der Datenbank zugriff
-            return new[]
+        public string Get(int id) => "Stanislaus";
+
+        public IEnumerable<string> GetAllCustomers() => new[]
             {
                 "Luise",
                 "Hannes",
                 "Andrea"
             };
-        }
     }
 }

@@ -4,9 +4,8 @@ using System;
 
 namespace DecoratorExample.Caching
 {
-    public class CachingRepository : IRepository
+    public class CachingRepository : RepositoryDecorator
     {
-        private readonly IRepository _baseRepository;
         private readonly ICache _cache;
         private readonly int _cachtime;
 
@@ -14,19 +13,19 @@ namespace DecoratorExample.Caching
 
         /// <param name="cachtime">The cachtime in seconds.</param>
         public CachingRepository(IRepository baseRepository, ICache cache, int cachtime = 30)
+            : base(baseRepository)
         {
-            _baseRepository = baseRepository;
             _cache = cache;
             _cachtime = cachtime;
         }
 
-        public IEnumerable<string> GetAllCustomers()
+        public override IEnumerable<string> GetAllCustomers()
         {
             const string cacheKey = "CachingRepository_GetAllCustomers";
 
             if (!_cache.Contains(cacheKey) || ShouldRelaodData())
             {
-                _cache.Add(cacheKey,_baseRepository.GetAllCustomers());
+                _cache.Add(cacheKey, base.GetAllCustomers());
                 _lastLoadedTime = DateTime.Now;
             }
 
