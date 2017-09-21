@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DecoratorExample.Caching
 {
-    public class Cache : ICache
+    public class SimpleCache : ICache
     {
         Dictionary<string, object> cache = new Dictionary<string, object>();
 
