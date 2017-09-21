@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloDelegates", "HalloDelegates\HalloDelegates.csproj", "{8788EFA1-E677-45B3-A509-16DDAD882365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HalloDelegates", "HalloDelegates\HalloDelegates.csproj", "{8788EFA1-E677-45B3-A509-16DDAD882365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesInPraxis", "DelegatesInPraxis\DelegatesInPraxis.csproj", "{78558265-3D66-4E77-9763-011BF37153CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesInPraxis", "DelegatesInPraxis\DelegatesInPraxis.csproj", "{78558265-3D66-4E77-9763-011BF37153CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingeltonExample", "SingeltonExample\SingeltonExample.csproj", "{C66E19A7-D9AE-41D8-8BD2-EEA226FF8F0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingeltonExample", "SingeltonExample\SingeltonExample.csproj", "{C66E19A7-D9AE-41D8-8BD2-EEA226FF8F0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderExample", "BuilderExample\BuilderExample.csproj", "{51712DCD-92A3-44BF-A0CC-5BDDEA033F2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderExample", "BuilderExample\BuilderExample.csproj", "{51712DCD-92A3-44BF-A0CC-5BDDEA033F2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeExample", "CompositeExample\CompositeExample.csproj", "{BA661751-4D18-4149-8899-965C896BCD7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompositeExample", "CompositeExample\CompositeExample.csproj", "{BA661751-4D18-4149-8899-965C896BCD7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorExample", "DecoratorExample\DecoratorExample.csproj", "{233D0789-142D-4278-8564-DACE6FC719EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorExample", "DecoratorExample\DecoratorExample.csproj", "{233D0789-142D-4278-8564-DACE6FC719EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{468DA25F-D83A-4FE9-BE13-C497A4A61FE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{233D0789-142D-4278-8564-DACE6FC719EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{233D0789-142D-4278-8564-DACE6FC719EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{233D0789-142D-4278-8564-DACE6FC719EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468DA25F-D83A-4FE9-BE13-C497A4A61FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468DA25F-D83A-4FE9-BE13-C497A4A61FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468DA25F-D83A-4FE9-BE13-C497A4A61FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468DA25F-D83A-4FE9-BE13-C497A4A61FE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
