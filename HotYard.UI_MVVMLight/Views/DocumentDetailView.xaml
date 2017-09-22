@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="HotYard.UI_MVVMLight.Views.DocumentDetailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converters="clr-namespace:HotYard.UI_MVVMLight.Converters"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             DataContext="{Binding Source={StaticResource Locator}, Path=DocumentDetail}" >
+    <UserControl.Resources>
+        <converters:ByteArrayToStringConverter x:Key="byteArrayToStringConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <TextBox Text="{Binding SelectedDoucment.Content, Converter={StaticResource byteArrayToStringConverter}}"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 MinWidth="250"/>
+    </Grid>
+</UserControl>

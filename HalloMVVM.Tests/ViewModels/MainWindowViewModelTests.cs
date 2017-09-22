@@ -49,8 +49,10 @@ namespace HalloMVVM.Tests.ViewModels
         [TestMethod]
         public void ChangeTextCommand_Execute_changes_WelcomeTextProperty()
         {
-            var vm = new MainWindowViewModel();
-            vm.WelcomeText = string.Empty;
+            var vm = new MainWindowViewModel
+            {
+                WelcomeText = string.Empty
+            };
 
             vm.ChangeTextCommand.Execute(null);
 
@@ -61,8 +63,10 @@ namespace HalloMVVM.Tests.ViewModels
         [TestMethod]
         public async Task ChangeText_changes_WelcomeTextProperty()
         {
-            var vm = new MainWindowViewModel();
-            vm.WelcomeText = string.Empty;
+            var vm = new MainWindowViewModel
+            {
+                WelcomeText = string.Empty
+            };
 
             await vm.ChangeText();
 
